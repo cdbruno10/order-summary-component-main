@@ -1,0 +1,106 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Desaturated-blue);
+}
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+p {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+article img {
+  order: -1;
+
+  border-radius: 15px 15px 0 0;
+}
+
+.plan {
+  display: flex;
+  font-size: 1.1rem;
+
+  background-color: var(--Very-pale-blue);
+  padding: 30px;
+  margin: 10px 40px;
+  border-radius: 15px;
+}
+.plan__type {
+  font-weight: 900;
+  padding-left: 2rem;
+  padding-top: 0.6rem;
+}
+
+.plan__price {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  padding-left: 2rem;
+}
+
+.change {
+  color: var(--Bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+.musiNote {
+  width: 20%;
+}
+
+button {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 20px;
+  margin: 10px 40px;
+  border-radius: 15px;
+
+  border: none;
+}
+.pay {
+  background-color: var(--Bright-blue);
+  color: var(--Pale-blue);
+  cursor: pointer;
+  box-shadow: 0 10px 35px hsl(252, 31%, 82%);
+}
+
+.cancel {
+  background-color: white;
+  color: var(--Desaturated-blue);
+}
